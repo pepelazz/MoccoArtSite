@@ -1,1 +1,101 @@
-html{font-family:Roboto,sans-serif!important;font-size:100%}@media (max-width:1240px){html{font-size:90%}}@media (max-width:992px){html{font-size:80%}}body,html{height:100%;width:100%;margin:0;padding:0;background-color:#f2f2f2}.content .wrapper{margin-left:25.42373%;width:49.15254%;float:left;text-align:center}.content .wrapper .picture{width:100%;max-width:25rem}
+/* line 2, ../app/style/partials/_style.sass */
+html {
+  font-family: "Roboto", sans-serif !important;
+  font-size: 100%;
+}
+@media (max-width: 1240px) {
+  /* line 2, ../app/style/partials/_style.sass */
+  html {
+    font-size: 90%;
+  }
+}
+@media (max-width: 992px) {
+  /* line 2, ../app/style/partials/_style.sass */
+  html {
+    font-size: 80%;
+  }
+}
+
+/* line 10, ../app/style/partials/_style.sass */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #24d7e9;
+}
+
+/* line 19, ../app/style/partials/_style.sass */
+.content {
+  min-height: 90%;
+  height: 90%;
+  height: auto !important;
+  padding-left: 3%;
+  overflow: scroll;
+}
+/* line 25, ../app/style/partials/_style.sass */
+.content .sidebar {
+  width: 10rem;
+  float: left;
+}
+/* line 28, ../app/style/partials/_style.sass */
+.content .sidebar img.logo {
+  margin-top: 1rem;
+  margin-left: -1rem;
+  width: 10rem;
+}
+/* line 32, ../app/style/partials/_style.sass */
+.content .main-area {
+  margin-left: 10rem;
+  position: relative;
+}
+/* line 35, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid {
+  position: relative;
+  overflow: scroll;
+  list-style: none;
+}
+/* line 39, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid li {
+  position: absolute;
+}
+/* line 41, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid li .wrapper {
+  background: white;
+  padding: 1rem;
+}
+/* line 44, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid li .wrapper img {
+  width: 100%;
+}
+
+/* line 48, ../app/style/partials/_style.sass */
+.footer {
+  position: relative;
+  min-height: 10%;
+  width: 100%;
+  background-color: #d6c8ad;
+}
+/* line 53, ../app/style/partials/_style.sass */
+.footer .girl-sea {
+  position: absolute;
+  top: -4.2rem;
+  left: 10rem;
+}
+
+/* line 58, ../app/style/partials/_style.sass */
+.nav {
+  list-style: none;
+  padding: 0;
+}
+/* line 61, ../app/style/partials/_style.sass */
+.nav li {
+  margin-bottom: 0.1rem;
+}
+/* line 63, ../app/style/partials/_style.sass */
+.nav a {
+  color: white;
+  font-weight: 100;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
