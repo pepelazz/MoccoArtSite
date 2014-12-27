@@ -69,30 +69,44 @@ html, body {
   width: 100%;
 }
 
-/* line 48, ../app/style/partials/_style.sass */
+/* line 49, ../app/style/partials/_style.sass */
+#screen-home img.house-in-sea {
+  display: block;
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 30px;
+}
+
+/* line 56, ../app/style/partials/_style.sass */
+img.house-in-sea {
+  display: none;
+}
+
+/* line 59, ../app/style/partials/_style.sass */
 .footer {
   position: relative;
   min-height: 10%;
   width: 100%;
   background-color: #d6c8ad;
 }
-/* line 53, ../app/style/partials/_style.sass */
+/* line 64, ../app/style/partials/_style.sass */
 .footer .girl-sea {
   position: absolute;
   top: -4.2rem;
   left: 10rem;
 }
 
-/* line 58, ../app/style/partials/_style.sass */
+/* line 69, ../app/style/partials/_style.sass */
 .nav {
   list-style: none;
   padding: 0;
 }
-/* line 61, ../app/style/partials/_style.sass */
+/* line 72, ../app/style/partials/_style.sass */
 .nav li {
   margin-bottom: 0.1rem;
 }
-/* line 63, ../app/style/partials/_style.sass */
+/* line 74, ../app/style/partials/_style.sass */
 .nav a {
   color: white;
   font-weight: 100;
