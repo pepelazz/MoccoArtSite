@@ -7,7 +7,7 @@
 
   module.controller('picturesGallery', [
     '$rootScope', '$scope', '$http', '$location', '$timeout', '$log', (function($rootScope, $scope, $http, $location, $timeout, $log) {
-      var arrangePictures, mainAreaWidth;
+      var arrangePictures, imgLoad, mainAreaWidth;
       mainAreaWidth = function() {
         return $('.main-area').width();
       };
@@ -27,7 +27,6 @@
               return 4;
           }
         })();
-        console.log(windowWidth, columnNums);
         $('.gallery-grid > li').each(function(index, el) {
           var col, picWidth, row, upperEl, upperElBottom;
           picWidth = mainAreaWidth() / columnNums - columnNums * 10;
@@ -42,7 +41,10 @@
           $(el).width(picWidth).css('left', (picWidth + 20) * col).css('top', upperElBottom + 20);
         });
       });
-      arrangePictures();
+      imgLoad = imagesLoaded($('.gallery-grid'));
+      imgLoad.on('always', function() {
+        return arrangePictures();
+      });
       $(window).resize(function() {
         return arrangePictures();
       });
