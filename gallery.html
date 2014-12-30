@@ -20,41 +20,142 @@
         </ul>
       </div>
       <div class="main-area">
-        <ul ng-controller="picturesGallery" class="gallery-grid">
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture01-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture02-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture03-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture04-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture05-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture06-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture07-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture08-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture09-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture10-small.jpg"></div>
-          </li>
-          <li>
-            <div class="wrapper"><img src="./images/pictures/picture11-small.jpg"></div>
-          </li>
-        </ul>
+        <div ng-controller="picturesGallery">
+          <ul class="gallery-grid">
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture01-small.jpg" ng-click="galleryImg.show(&quot;0&quot;)">
+                <div class="name">Подарок от Курочки Рябы</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture02-small.jpg" ng-click="galleryImg.show(&quot;1&quot;)">
+                <div class="name">В объятьях Хармса</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture03-small.jpg" ng-click="galleryImg.show(&quot;2&quot;)">
+                <div class="name">Яблоки Матисса</div>
+                <div class="status">Находится в частной коллекции</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture04-small.jpg" ng-click="galleryImg.show(&quot;3&quot;)">
+                <div class="name">Cалют.Астры</div>
+                <div class="poetry">
+                  Внимаю ветер,люблю я солнце <br>
+                  шумят деревья,трава шумит  <br>
+                  Все зеленеет и расцверает <br>
+                  Приходит время , я рсцветаю <br>
+                  Люблю я небо и негу счастья <br>
+                  В тепле купаясь <br>
+                  Благословляю свое рождение <br>
+                  Спасибо Богу за это счастье <br>
+                  Спасибо звездам за это время <br>
+                  Судьбе спасибо <br>
+                  Я принимаю и я живу  <br>
+                  Спасибо жизни <br>
+                  Ведь я люблю <br>
+                  Люблю ребенка <br>
+                  Люблю себя <br>
+                  Люблю все данное судьбою <br>
+                  И принимая прикосновения  <br>
+                  Я принимаю свое рождение!  <br>
+                </div><a href="" target="_blank" class="author">Оксана Гинзбург</a>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture05-small.jpg" ng-click="galleryImg.show(&quot;4&quot;)">
+                <div class="name">Сапфировый кофе</div>
+                <div class="status">Находится в частной коллекции</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture06-small.jpg" ng-click="galleryImg.show(&quot;5&quot;)">
+                <div class="name">Радостная лейка</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture07-small.jpg" ng-click="galleryImg.show(&quot;6&quot;)">
+                <div class="name">Букет для мамы</div>
+                <div class="poetry">
+                  Внимаю ветер,люблю я солнце <br>
+                  шумят деревья,трава шумит  <br>
+                  Все зеленеет и расцверает <br>
+                  Приходит время , я рсцветаю <br>
+                  Люблю я небо и негу счастья <br>
+                  В тепле купаясь <br>
+                  Благословляю свое рождение <br>
+                  Спасибо Богу за это счастье <br>
+                  Спасибо звездам за это время <br>
+                  Судьбе спасибо <br>
+                  Я принимаю и я живу  <br>
+                  Спасибо жизни <br>
+                  Ведь я люблю <br>
+                  Люблю ребенка <br>
+                  Люблю себя <br>
+                  Люблю все данное судьбою <br>
+                  И принимая прикосновения  <br>
+                  Я принимаю свое рождение!  <br>
+                </div><a href="" target="_blank" class="author">Оксана Гинзбург</a>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture08-small.jpg" ng-click="galleryImg.show(&quot;7&quot;)">
+                <div class="name">Миражи</div>
+                <div class="status">Находится в частной коллекции</div>
+                <div class="poetry">
+                   Я лунный свет и нереальная реальность <br>
+                  Как дуновение ветерка легка    <br>
+                  Без запаха,  без вкуса     <br>
+                  Лишь название   <br>
+                  И голос мой звучит из далека   <br>
+                  Желанная мечта,окутанная в одеяло <br>
+                  Из нежности и страсти<br>
+                  Я шепот уносящийся в ночи <br>
+                  И воск расплавленной свечи  <br>
+                  И миражи ,, лишь миражи! <br>
+                </div><a href="" target="_blank" class="author">Оксана Гинзбург</a>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture09-small.jpg" ng-click="galleryImg.show(&quot;8&quot;)">
+                <div class="name">На здоровье!</div>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture10-small.jpg" ng-click="galleryImg.show(&quot;9&quot;)">
+                <div class="name">Доверие</div>
+                <div class="poetry">
+                  Придумать чудо так не сложно  <br>
+                  Сложней поверить, что все возможно  <br>
+                  На грани жить! Дышать мечтой!  <br>
+                  С судьбою спорить! Любить душой!  <br>
+                  И каждый для себя решает сам  <br>
+                  Открыть ли душу небесам! <br>
+                  Целую звезды люблю я небо <br>
+                  И перекресток трех дорог <br>
+                  Во мне соединиться хочет <br>
+                  Боюсь поверить ! И не проверить!  <br>
+                  Я отпускаю все ненастья! На встречу жизни  <br>
+                  И судьбе!  <br>
+                  Я вновь скажу самой себе   <br>
+                  И в добрый путь   <br>
+                  И здравствуй счастье!   <br>
+                </div><a href="" target="_blank" class="author">Оксана Гинзбург</a>
+              </div>
+            </li>
+            <li>
+              <div class="wrapper"><img src="./images/pictures/picture11-small.jpg" ng-click="galleryImg.show(&quot;10&quot;)">
+                <div class="name">Последний аккорд</div>
+                <div class="status">Находится в частной коллекции</div>
+              </div>
+            </li>
+          </ul>
+          <div ng-class="{show: galleryImg.isBackdropShow}" class="modal-backdrop"></div>
+          <div ng-show="galleryImg.currentImgFileName!=null" class="modal-picture">
+            <div class="picture-wrapper"><img src="./images/icons/left-arrow-white.svg" ng-if="galleryImg.isNextLeft()" ng-click="galleryImg.nextLeft()" class="slider-arrow left-arrow"><img ng-src="./images/pictures/{{galleryImg.currentImgFileName}}.jpg" class="picture"><img src="./images/icons/right-arrow-white.svg" ng-if="galleryImg.isNextRight()" ng-click="galleryImg.nextRight()" class="slider-arrow right-arrow"></div><img src="./images/icons/close-white.svg" ng-click="galleryImg.close()" class="close">
+          </div>
+        </div>
       </div>
     </div><img src="./images/house-in-sea.jpg" class="house-in-sea">
     <div class="footer"><img src="./images/girl-sea.png" class="girl-sea"></div>
@@ -63,4 +164,17 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.js"></script>
   <script src="./libs/imagesloaded.pkgd.min.js"></script>
   <script src="./app.js"></script>
+  <script>
+    window.picturesArray = [];
+    var picturesList = [{"fileName":"picture01","name":"Подарок от Курочки Рябы"},{"fileName":"picture02","name":"В объятьях Хармса"},{"fileName":"picture03","name":"Яблоки Матисса","status":"Находится в частной коллекции"},{"fileName":"picture04","name":"Cалют.Астры","text":"poetry003"},{"fileName":"picture05","name":"Сапфировый кофе","status":"Находится в частной коллекции"},{"fileName":"picture06","name":"Радостная лейка"},{"fileName":"picture07","name":"Букет для мамы","text":"poetry003"},{"fileName":"picture08","name":"Миражи","text":"poetry001","status":"Находится в частной коллекции"},{"fileName":"picture09","name":"На здоровье!"},{"fileName":"picture10","name":"Доверие","text":"poetry004"},{"fileName":"picture11","name":"Последний аккорд","status":"Находится в частной коллекции"}];
+    i =0
+    for(pic in picturesList) {
+        window.picturesArray.push({"index": pic, "fileName": picturesList[pic].fileName})
+        i++
+    }
+    
+    
+    
+    
+  </script>
 </html>

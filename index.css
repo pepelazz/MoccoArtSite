@@ -18,6 +18,7 @@ html {
 
 /* line 10, ../app/style/partials/_style.sass */
 html, body {
+  position: relative;
   height: 100%;
   width: 100%;
   margin: 0px;
@@ -25,91 +26,205 @@ html, body {
   background-color: #24d7e9;
 }
 
-/* line 19, ../app/style/partials/_style.sass */
+/* line 20, ../app/style/partials/_style.sass */
 .content {
   min-height: 90%;
   height: 90%;
   height: auto !important;
   padding-left: 3%;
-  overflow: scroll;
+  overflow: auto;
 }
-/* line 25, ../app/style/partials/_style.sass */
+/* line 26, ../app/style/partials/_style.sass */
 .content .sidebar {
   width: 10rem;
   float: left;
 }
-/* line 28, ../app/style/partials/_style.sass */
+@media (max-width: 600px) {
+  /* line 26, ../app/style/partials/_style.sass */
+  .content .sidebar {
+    float: none;
+  }
+}
+/* line 31, ../app/style/partials/_style.sass */
 .content .sidebar img.logo {
   margin-top: 1rem;
   margin-left: -1rem;
   width: 10rem;
 }
-/* line 32, ../app/style/partials/_style.sass */
+/* line 35, ../app/style/partials/_style.sass */
 .content .main-area {
   margin-left: 10rem;
   position: relative;
 }
-/* line 35, ../app/style/partials/_style.sass */
+@media (max-width: 600px) {
+  /* line 35, ../app/style/partials/_style.sass */
+  .content .main-area {
+    margin-left: 0;
+  }
+}
+/* line 40, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid {
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   list-style: none;
 }
-/* line 39, ../app/style/partials/_style.sass */
+/* line 44, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li {
   position: absolute;
 }
-/* line 41, ../app/style/partials/_style.sass */
+/* line 46, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li .wrapper {
   background: white;
   padding: 1rem;
 }
-/* line 44, ../app/style/partials/_style.sass */
+/* line 49, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li .wrapper img {
   width: 100%;
+  cursor: pointer;
+}
+/* line 52, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid .status {
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+/* line 55, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid .poetry {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+/* line 59, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid .author {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
 }
 
-/* line 49, ../app/style/partials/_style.sass */
+/* line 68, ../app/style/partials/_style.sass */
 #screen-home img.house-in-sea {
   display: block;
   position: absolute;
+  z-index: 10;
   width: 100%;
   right: 0;
   bottom: 30px;
 }
 
-/* line 56, ../app/style/partials/_style.sass */
+/* line 76, ../app/style/partials/_style.sass */
 img.house-in-sea {
   display: none;
 }
 
-/* line 59, ../app/style/partials/_style.sass */
+/* line 80, ../app/style/partials/_style.sass */
 .footer {
   position: relative;
+  z-index: 100;
   min-height: 10%;
   width: 100%;
   background-color: #d6c8ad;
 }
-/* line 64, ../app/style/partials/_style.sass */
+/* line 86, ../app/style/partials/_style.sass */
 .footer .girl-sea {
   position: absolute;
   top: -4.2rem;
   left: 10rem;
 }
 
-/* line 69, ../app/style/partials/_style.sass */
+/* line 91, ../app/style/partials/_style.sass */
 .nav {
+  position: relative;
+  z-index: 100;
   list-style: none;
   padding: 0;
 }
-/* line 72, ../app/style/partials/_style.sass */
+/* line 96, ../app/style/partials/_style.sass */
 .nav li {
   margin-bottom: 0.1rem;
 }
-/* line 74, ../app/style/partials/_style.sass */
+/* line 98, ../app/style/partials/_style.sass */
 .nav a {
   color: white;
   font-weight: 100;
   font-size: 1.3rem;
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  /* line 98, ../app/style/partials/_style.sass */
+  .nav a {
+    color: black;
+  }
+}
+
+/* line 107, ../app/style/partials/_style.sass */
+.modal-backdrop {
+  display: none;
+  background-color: #24d7e9;
+  opacity: 0.95;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+}
+/* line 109, ../app/style/partials/_style.sass */
+.modal-backdrop.show {
+  display: block;
+}
+
+/* line 120, ../app/style/partials/_style.sass */
+.modal-picture {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  margin-left: -12rem;
+  z-index: 1010;
+}
+@media (max-width: 600px) {
+  /* line 120, ../app/style/partials/_style.sass */
+  .modal-picture {
+    margin-left: -2rem;
+  }
+}
+/* line 129, ../app/style/partials/_style.sass */
+.modal-picture .picture {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* line 136, ../app/style/partials/_style.sass */
+.modal-picture .slider-arrow {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4rem;
+  z-index: 1002;
+  opacity: 0.3;
+  cursor: pointer;
+}
+/* line 145, ../app/style/partials/_style.sass */
+.modal-picture .slider-arrow:hover {
+  opacity: 1;
+}
+/* line 147, ../app/style/partials/_style.sass */
+.modal-picture .slider-arrow.left-arrow {
+  left: 1rem;
+}
+/* line 149, ../app/style/partials/_style.sass */
+.modal-picture .slider-arrow.right-arrow {
+  right: 1rem;
+}
+/* line 151, ../app/style/partials/_style.sass */
+.modal-picture .close {
+  position: absolute;
+  z-index: 1001;
+  top: 2rem;
+  right: 2rem;
+  width: 2rem;
+  cursor: pointer;
 }
