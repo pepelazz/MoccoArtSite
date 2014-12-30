@@ -116,4 +116,23 @@
     })
   ]);
 
+  module.directive('fixWidth', [
+    (function() {
+      return {
+        restrict: 'A',
+        link: function($scope, element, attrs) {
+          var arrangeHeight;
+          console.log('here');
+          arrangeHeight = (function() {
+            $(element).css('height', $(window).height() * 0.85);
+          });
+          arrangeHeight();
+          $(window).resize(function() {
+            return arrangeHeight();
+          });
+        }
+      };
+    })
+  ]);
+
 }).call(this);

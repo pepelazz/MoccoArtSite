@@ -24,9 +24,11 @@ html, body {
   margin: 0px;
   padding: 0px;
   background-color: #24d7e9;
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
 }
 
-/* line 20, ../app/style/partials/_style.sass */
+/* line 22, ../app/style/partials/_style.sass */
 .content {
   min-height: 90%;
   height: 90%;
@@ -34,73 +36,180 @@ html, body {
   padding-left: 3%;
   overflow: auto;
 }
-/* line 26, ../app/style/partials/_style.sass */
+/* line 28, ../app/style/partials/_style.sass */
 .content .sidebar {
   width: 10rem;
   float: left;
 }
 @media (max-width: 600px) {
-  /* line 26, ../app/style/partials/_style.sass */
+  /* line 28, ../app/style/partials/_style.sass */
   .content .sidebar {
     float: none;
   }
 }
-/* line 31, ../app/style/partials/_style.sass */
+/* line 33, ../app/style/partials/_style.sass */
 .content .sidebar img.logo {
   margin-top: 1rem;
   margin-left: -1rem;
   width: 10rem;
 }
-/* line 35, ../app/style/partials/_style.sass */
+/* line 37, ../app/style/partials/_style.sass */
 .content .main-area {
   margin-left: 10rem;
   position: relative;
 }
 @media (max-width: 600px) {
-  /* line 35, ../app/style/partials/_style.sass */
+  /* line 37, ../app/style/partials/_style.sass */
   .content .main-area {
     margin-left: 0;
   }
 }
-/* line 40, ../app/style/partials/_style.sass */
-.content .main-area .gallery-grid {
-  position: relative;
-  overflow: auto;
-  list-style: none;
+/* line 42, ../app/style/partials/_style.sass */
+.content .main-area .gallery-wrapper {
+  overflow: hidden;
 }
 /* line 44, ../app/style/partials/_style.sass */
+.content .main-area .gallery-grid {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  margin-right: -100px;
+  padding-right: 100px;
+}
+/* line 51, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li {
   position: absolute;
 }
-/* line 46, ../app/style/partials/_style.sass */
+/* line 53, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li .wrapper {
   background: white;
   padding: 1rem;
 }
-/* line 49, ../app/style/partials/_style.sass */
+/* line 56, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid li .wrapper img {
   width: 100%;
   cursor: pointer;
 }
-/* line 52, ../app/style/partials/_style.sass */
+/* line 59, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid .status {
   font-size: 0.7rem;
   opacity: 0.5;
 }
-/* line 55, ../app/style/partials/_style.sass */
+/* line 62, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid .poetry {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 0.8rem;
 }
-/* line 59, ../app/style/partials/_style.sass */
+/* line 66, ../app/style/partials/_style.sass */
 .content .main-area .gallery-grid .author {
   display: block;
   text-align: right;
   font-size: 0.8rem;
 }
+/* line 71, ../app/style/partials/_style.sass */
+.content .main-area .events-wrapper {
+  overflow: hidden;
+}
+/* line 73, ../app/style/partials/_style.sass */
+.content .main-area .events-list {
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  margin-right: -100px;
+  padding-right: 100px;
+}
+/* line 81, ../app/style/partials/_style.sass */
+.content .main-area .events-list li {
+  width: 66.10169%;
+  float: left;
+}
+@media (min-width: 992px) {
+  /* line 83, ../app/style/partials/_style.sass */
+  .content .main-area .events-list li.odd {
+    margin-left: 25.42373%;
+  }
+}
+/* line 86, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .text-block {
+  float: left;
+  text-align: right;
+  font-size: 1.5rem;
+}
+@media (max-width: 900px) {
+  /* line 86, ../app/style/partials/_style.sass */
+  .content .main-area .events-list li .text-block {
+    float: none;
+  }
+}
+/* line 92, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .text-block span {
+  display: block;
+  color: #0f8b98;
+}
+/* line 95, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .text-block span.date {
+  font-weight: 100;
+}
+/* line 97, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .text-block span.title {
+  font-weight: 500;
+}
+/* line 99, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .circle {
+  float: left;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15rem;
+  cursor: pointer;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+@media (max-width: 900px) {
+  /* line 99, ../app/style/partials/_style.sass */
+  .content .main-area .events-list li .circle {
+    float: none;
+  }
+}
+@media (max-width: 1150px) {
+  /* line 99, ../app/style/partials/_style.sass */
+  .content .main-area .events-list li .circle {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+/* line 111, ../app/style/partials/_style.sass */
+.content .main-area .events-list li .circle:hover {
+  width: 18rem;
+  height: 18rem;
+}
 
-/* line 68, ../app/style/partials/_style.sass */
+/* line 115, ../app/style/partials/_style.sass */
+.event-wrapper {
+  overflow: hidden;
+}
+/* line 118, ../app/style/partials/_style.sass */
+.event-wrapper .event-main-text {
+  margin-left: 8.47458%;
+  width: 66.10169%;
+  float: left;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  list-style: none;
+  margin-right: -1000px;
+  padding-right: 1000px;
+}
+/* line 128, ../app/style/partials/_style.sass */
+.event-wrapper .event-main-text .about {
+  margin-left: 8.47458%;
+}
+
+/* line 135, ../app/style/partials/_style.sass */
 #screen-home img.house-in-sea {
   display: block;
   position: absolute;
@@ -110,12 +219,12 @@ html, body {
   bottom: 30px;
 }
 
-/* line 76, ../app/style/partials/_style.sass */
+/* line 143, ../app/style/partials/_style.sass */
 img.house-in-sea {
   display: none;
 }
 
-/* line 80, ../app/style/partials/_style.sass */
+/* line 147, ../app/style/partials/_style.sass */
 .footer {
   position: relative;
   z-index: 100;
@@ -123,25 +232,25 @@ img.house-in-sea {
   width: 100%;
   background-color: #d6c8ad;
 }
-/* line 86, ../app/style/partials/_style.sass */
+/* line 153, ../app/style/partials/_style.sass */
 .footer .girl-sea {
   position: absolute;
   top: -4.2rem;
   left: 10rem;
 }
 
-/* line 91, ../app/style/partials/_style.sass */
+/* line 158, ../app/style/partials/_style.sass */
 .nav {
   position: relative;
   z-index: 100;
   list-style: none;
   padding: 0;
 }
-/* line 96, ../app/style/partials/_style.sass */
+/* line 163, ../app/style/partials/_style.sass */
 .nav li {
-  margin-bottom: 0.1rem;
+  margin-bottom: 0.3rem;
 }
-/* line 98, ../app/style/partials/_style.sass */
+/* line 165, ../app/style/partials/_style.sass */
 .nav a {
   color: white;
   font-weight: 100;
@@ -149,13 +258,13 @@ img.house-in-sea {
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  /* line 98, ../app/style/partials/_style.sass */
+  /* line 165, ../app/style/partials/_style.sass */
   .nav a {
     color: black;
   }
 }
 
-/* line 107, ../app/style/partials/_style.sass */
+/* line 174, ../app/style/partials/_style.sass */
 .modal-backdrop {
   display: none;
   background-color: #24d7e9;
@@ -167,12 +276,12 @@ img.house-in-sea {
   height: 100vh;
   z-index: 1000;
 }
-/* line 109, ../app/style/partials/_style.sass */
+/* line 176, ../app/style/partials/_style.sass */
 .modal-backdrop.show {
   display: block;
 }
 
-/* line 120, ../app/style/partials/_style.sass */
+/* line 187, ../app/style/partials/_style.sass */
 .modal-picture {
   position: fixed;
   top: 0;
@@ -182,12 +291,12 @@ img.house-in-sea {
   z-index: 1010;
 }
 @media (max-width: 600px) {
-  /* line 120, ../app/style/partials/_style.sass */
+  /* line 187, ../app/style/partials/_style.sass */
   .modal-picture {
     margin-left: -2rem;
   }
 }
-/* line 129, ../app/style/partials/_style.sass */
+/* line 196, ../app/style/partials/_style.sass */
 .modal-picture .picture {
   position: fixed;
   top: 0;
@@ -196,7 +305,7 @@ img.house-in-sea {
   right: 0;
   margin: auto;
 }
-/* line 136, ../app/style/partials/_style.sass */
+/* line 203, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow {
   position: fixed;
   top: 0;
@@ -207,19 +316,19 @@ img.house-in-sea {
   opacity: 0.3;
   cursor: pointer;
 }
-/* line 145, ../app/style/partials/_style.sass */
+/* line 212, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow:hover {
   opacity: 1;
 }
-/* line 147, ../app/style/partials/_style.sass */
+/* line 214, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow.left-arrow {
   left: 1rem;
 }
-/* line 149, ../app/style/partials/_style.sass */
+/* line 216, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow.right-arrow {
   right: 1rem;
 }
-/* line 151, ../app/style/partials/_style.sass */
+/* line 218, ../app/style/partials/_style.sass */
 .modal-picture .close {
   position: absolute;
   z-index: 1001;
