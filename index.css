@@ -126,38 +126,44 @@ html, body {
   width: 66.10169%;
   float: left;
 }
+@media (max-width: 992px) {
+  /* line 81, ../app/style/partials/_style.sass */
+  .content .main-area .events-list li {
+    margin-bottom: 2rem;
+  }
+}
 @media (min-width: 992px) {
-  /* line 83, ../app/style/partials/_style.sass */
+  /* line 85, ../app/style/partials/_style.sass */
   .content .main-area .events-list li.odd {
     margin-left: 25.42373%;
   }
 }
-/* line 86, ../app/style/partials/_style.sass */
+/* line 88, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .text-block {
   float: left;
   text-align: right;
   font-size: 1.5rem;
 }
 @media (max-width: 900px) {
-  /* line 86, ../app/style/partials/_style.sass */
+  /* line 88, ../app/style/partials/_style.sass */
   .content .main-area .events-list li .text-block {
     float: none;
   }
 }
-/* line 92, ../app/style/partials/_style.sass */
+/* line 94, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .text-block span {
   display: block;
   color: #0f8b98;
 }
-/* line 95, ../app/style/partials/_style.sass */
+/* line 97, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .text-block span.date {
   font-weight: 100;
 }
-/* line 97, ../app/style/partials/_style.sass */
+/* line 99, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .text-block span.title {
   font-weight: 500;
 }
-/* line 99, ../app/style/partials/_style.sass */
+/* line 101, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .circle {
   float: left;
   width: 15rem;
@@ -170,29 +176,29 @@ html, body {
   transition: all 0.2s ease;
 }
 @media (max-width: 900px) {
-  /* line 99, ../app/style/partials/_style.sass */
+  /* line 101, ../app/style/partials/_style.sass */
   .content .main-area .events-list li .circle {
     float: none;
   }
 }
 @media (max-width: 1150px) {
-  /* line 99, ../app/style/partials/_style.sass */
+  /* line 101, ../app/style/partials/_style.sass */
   .content .main-area .events-list li .circle {
     width: 10rem;
     height: 10rem;
   }
 }
-/* line 111, ../app/style/partials/_style.sass */
+/* line 113, ../app/style/partials/_style.sass */
 .content .main-area .events-list li .circle:hover {
   width: 18rem;
   height: 18rem;
 }
 
-/* line 115, ../app/style/partials/_style.sass */
+/* line 117, ../app/style/partials/_style.sass */
 .event-wrapper {
   overflow: hidden;
 }
-/* line 118, ../app/style/partials/_style.sass */
+/* line 120, ../app/style/partials/_style.sass */
 .event-wrapper .event-main-text {
   margin-left: 8.47458%;
   width: 66.10169%;
@@ -204,12 +210,12 @@ html, body {
   margin-right: -1000px;
   padding-right: 1000px;
 }
-/* line 128, ../app/style/partials/_style.sass */
+/* line 130, ../app/style/partials/_style.sass */
 .event-wrapper .event-main-text .about {
   margin-left: 8.47458%;
 }
 
-/* line 135, ../app/style/partials/_style.sass */
+/* line 137, ../app/style/partials/_style.sass */
 #screen-home img.house-in-sea {
   display: block;
   position: absolute;
@@ -219,12 +225,12 @@ html, body {
   bottom: 30px;
 }
 
-/* line 143, ../app/style/partials/_style.sass */
+/* line 145, ../app/style/partials/_style.sass */
 img.house-in-sea {
   display: none;
 }
 
-/* line 147, ../app/style/partials/_style.sass */
+/* line 149, ../app/style/partials/_style.sass */
 .footer {
   position: relative;
   z-index: 100;
@@ -232,25 +238,25 @@ img.house-in-sea {
   width: 100%;
   background-color: #d6c8ad;
 }
-/* line 153, ../app/style/partials/_style.sass */
+/* line 155, ../app/style/partials/_style.sass */
 .footer .girl-sea {
   position: absolute;
   top: -4.2rem;
   left: 10rem;
 }
 
-/* line 158, ../app/style/partials/_style.sass */
+/* line 160, ../app/style/partials/_style.sass */
 .nav {
   position: relative;
   z-index: 100;
   list-style: none;
   padding: 0;
 }
-/* line 163, ../app/style/partials/_style.sass */
+/* line 165, ../app/style/partials/_style.sass */
 .nav li {
   margin-bottom: 0.3rem;
 }
-/* line 165, ../app/style/partials/_style.sass */
+/* line 167, ../app/style/partials/_style.sass */
 .nav a {
   color: white;
   font-weight: 100;
@@ -258,13 +264,13 @@ img.house-in-sea {
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  /* line 165, ../app/style/partials/_style.sass */
+  /* line 167, ../app/style/partials/_style.sass */
   .nav a {
     color: black;
   }
 }
 
-/* line 174, ../app/style/partials/_style.sass */
+/* line 176, ../app/style/partials/_style.sass */
 .modal-backdrop {
   display: none;
   background-color: #24d7e9;
@@ -276,12 +282,12 @@ img.house-in-sea {
   height: 100vh;
   z-index: 1000;
 }
-/* line 176, ../app/style/partials/_style.sass */
+/* line 178, ../app/style/partials/_style.sass */
 .modal-backdrop.show {
   display: block;
 }
 
-/* line 187, ../app/style/partials/_style.sass */
+/* line 189, ../app/style/partials/_style.sass */
 .modal-picture {
   position: fixed;
   top: 0;
@@ -291,12 +297,12 @@ img.house-in-sea {
   z-index: 1010;
 }
 @media (max-width: 600px) {
-  /* line 187, ../app/style/partials/_style.sass */
+  /* line 189, ../app/style/partials/_style.sass */
   .modal-picture {
     margin-left: -2rem;
   }
 }
-/* line 196, ../app/style/partials/_style.sass */
+/* line 198, ../app/style/partials/_style.sass */
 .modal-picture .picture {
   position: fixed;
   top: 0;
@@ -305,7 +311,7 @@ img.house-in-sea {
   right: 0;
   margin: auto;
 }
-/* line 203, ../app/style/partials/_style.sass */
+/* line 205, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow {
   position: fixed;
   top: 0;
@@ -316,19 +322,19 @@ img.house-in-sea {
   opacity: 0.3;
   cursor: pointer;
 }
-/* line 212, ../app/style/partials/_style.sass */
+/* line 214, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow:hover {
   opacity: 1;
 }
-/* line 214, ../app/style/partials/_style.sass */
+/* line 216, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow.left-arrow {
   left: 1rem;
 }
-/* line 216, ../app/style/partials/_style.sass */
+/* line 218, ../app/style/partials/_style.sass */
 .modal-picture .slider-arrow.right-arrow {
   right: 1rem;
 }
-/* line 218, ../app/style/partials/_style.sass */
+/* line 220, ../app/style/partials/_style.sass */
 .modal-picture .close {
   position: absolute;
   z-index: 1001;
